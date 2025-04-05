@@ -2,11 +2,11 @@ const mysql=require('mysql2/promise')
 require('dotenv').config();
 
 const db=mysql.createPool({
-    host:process.env.DB_HOST || 'localhost',
+    host:process.env.DB_HOST || 'yamanote.proxy.rlwy.net',
     user:process.env.DB_USERNAME || 'root',
-    password:process.env.DB_PASSWORD || 'root123',
-    database:process.env.DB_NAME || 'bedev',
-    port:process.db.env.DB_PORT ||  3306,
+    password:process.env.DB_PASSWORD || 'JyKGPlquofuCkWNgFGyRoDtRvhRgZkJE',
+    database:process.env.DB_NAME || 'railway',
+    port:process.env.DB_PORT ||  49560,
     waitForConnections: true,
     connectionLimit:10,
     queueLimit:0,
