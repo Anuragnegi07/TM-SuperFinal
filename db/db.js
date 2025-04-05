@@ -6,6 +6,7 @@ const connect=db.createPool({
     user:process.env.DB_USERNAME || 'root',
     password:process.env.DB_PASSWORD || 'root123',
     database:process.env.DB_NAME || 'bedev',
+    port:process.db.env.DB_PORT ||  3306,
     waitForConnections: true,
     connectionLimit:10,
     queueLimit:0,
